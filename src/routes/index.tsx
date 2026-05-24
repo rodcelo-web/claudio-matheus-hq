@@ -233,6 +233,9 @@ function Landing() {
           <div className="font-serif text-xl text-gradient-gold">Cláudio Góes <span className="text-xs tracking-[0.3em] text-muted-foreground ml-2">ADVOGADO</span></div>
           <div className="text-xs text-muted-foreground">© {new Date().getFullYear()} Cláudio Matheus P. G. Góes. Todos os direitos reservados.</div>
         </div>
+        <div className="max-w-7xl mx-auto px-6 mt-6 pt-6 border-t border-border/50 text-center">
+          <p className="text-[11px] tracking-[0.15em] text-muted-foreground/70 uppercase">Em conformidade com o Provimento 205/2021 da OAB</p>
+        </div>
       </footer>
 
       {/* FLOATING WHATSAPP */}
