@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://claudio-matheus-hq.lovable.app/sitemap.xml
