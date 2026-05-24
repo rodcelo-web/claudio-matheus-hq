@@ -9,11 +9,29 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Advocacia Criminal, Família e Civil. Prisão em flagrante, Audiência de Custódia e Defesa em Tribunais. Atendimento nacional." },
       { property: "og:title", content: "Cláudio Góes — Advogado" },
       { property: "og:description", content: "Defesa criminal, família e civil com atendimento nacional. Agende uma consulta." },
+      { property: "og:url", content: "https://claudio-matheus-hq.lovable.app/" },
     ],
     links: [
+      { rel: "canonical", href: "https://claudio-matheus-hq.lovable.app/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Attorney",
+          name: "Cláudio Matheus P. G. Góes",
+          description: "Advocacia Criminal, Família e Civil. Prisão em flagrante, audiência de custódia e defesa em Tribunais.",
+          url: "https://claudio-matheus-hq.lovable.app/",
+          telephone: "+55-45-99830-4426",
+          areaServed: "BR",
+          knowsAbout: ["Direito Criminal", "Direito de Família", "Direito Civil", "Audiência de Custódia", "Habeas Corpus"],
+          address: { "@type": "PostalAddress", addressCountry: "BR" },
+        }),
+      },
     ],
   }),
   component: Landing,
@@ -101,7 +119,7 @@ function Landing() {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-primary/20">
-              <img src={claudioImg} alt="Dr. Cláudio Matheus P. G. Góes — Advogado" className="w-full h-auto" />
+              <img src={claudioImg} alt="Dr. Cláudio Matheus P. G. Góes — Advogado" width={840} height={780} fetchPriority="high" decoding="async" className="w-full h-auto" />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/80 to-transparent">
                 <div className="font-serif text-xl text-gradient-gold">Cláudio Matheus P. G. Góes</div>
                 <div className="text-xs tracking-[0.2em] text-muted-foreground uppercase mt-1">Advogado · OAB</div>
