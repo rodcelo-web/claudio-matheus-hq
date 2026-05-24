@@ -119,7 +119,7 @@ function Landing() {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-primary/20">
-              <img src={claudioImg} alt="Dr. Cláudio Matheus P. G. Góes — Advogado" className="w-full h-auto" />
+              <img src={claudioImg} alt="Dr. Cláudio Matheus P. G. Góes — Advogado" width={840} height={780} fetchPriority="high" decoding="async" className="w-full h-auto" />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/80 to-transparent">
                 <div className="font-serif text-xl text-gradient-gold">Cláudio Matheus P. G. Góes</div>
                 <div className="text-xs tracking-[0.2em] text-muted-foreground uppercase mt-1">Advogado · OAB</div>
